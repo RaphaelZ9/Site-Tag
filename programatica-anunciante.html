@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>TAG | Programática para Anunciantes.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+body{
+margin:0;
+background:#05070d;
+color:#fff;
+font-family:'Inter',sans-serif;
+overflow-x:hidden;
+}
+
+.mp-wrap{
+width:min(1320px,calc(100% - 42px));
+margin:auto;
+}
+
+/* HERO */
+.mp-hero{
+padding:170px 0 100px;
+background:
+radial-gradient(circle at left center,
+rgba(22,119,255,.14),
+transparent 38%),
+
+linear-gradient(
+90deg,
+rgba(3,5,10,.98) 0%,
+rgba(3,5,10,.92) 36%,
+rgba(3,5,10,.58) 62%,
+rgba(3,5,10,.16) 82%,
+rgba(3,5,10,0) 100%
+),
+
+url('https://tag.vc/wp-content/uploads/2025/07/bg-homepage-2.webp');
+
+background-size:cover;
+background-position:center right;
+}
+
+.mp-tag{
+display:block;
+font-size:13px;
+font-weight:900;
+letter-spacing:.18em;
+color:#1ea7ff;
+margin-bottom:18px;
+}
+
+.mp-title{
+  font-size:clamp(72px,7vw,128px);
+  line-height:.88;
+  font-weight:900;
+  letter-spacing:-.08em;
+  max-width:1050px;
+
+  text-shadow:
+  0 0 24px rgba(30,167,255,.12);
+
+  margin-bottom:24px;
+
+  text-wrap:balance;
+  overflow-wrap:break-word;
+}
+
+.mp-title span{
+background:linear-gradient(90deg,#1ea7ff,#4f7dff,#7b61ff);
+-webkit-background-clip:text;
+background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.mp-sub{
+max-width:820px;
+font-size:21px;
+line-height:1.9;
+color:#aeb8d3;
+
+font-weight:400;
+
+letter-spacing:-.01em;
+
+margin-bottom:26px;
+}
+
+.mp-actions{
+display:flex;
+gap:16px;
+flex-wrap:wrap;
+}
+
+/* SECTIONS */
+.mp-section{
+padding:130px 0;
+position:relative;
+}
+
+.mp-head{
+text-align:center;
+margin-bottom:32px;
+}
+
+.mp-head h2{
+font-size:clamp(42px,4vw,72px);
+
+font-weight:900;
+
+letter-spacing:-.06em;
+
+margin:0;
+
+line-height:.95;
+
+text-shadow:
+0 0 20px rgba(255,255,255,.06);
+}
+
+/* BOX GRID */
+.mp-grid{
+display:grid;
+gap:22px;
+}
+
+/* O QUE FAZEMOS */
+.mp-2col{
+grid-template-columns:repeat(2,1fr);
+}
+
+.mp-listbox{
+padding:44px;
+
+border-radius:34px;
+
+border:1px solid rgba(76,132,255,.12);
+
+background:
+linear-gradient(
+180deg,
+rgba(10,14,28,.94),
+rgba(4,8,18,.98)
+);
+
+box-shadow:
+0 0 60px rgba(0,0,0,.28);
+}
+
+.mp-listbox ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.mp-listbox li{
+padding:18px 0;
+font-size:18px;
+color:#d8e0f5;
+border-top:1px solid rgba(255,255,255,.04);
+}
+
+.mp-listbox li:first-child{
+border-top:none;
+}
+
+/* PLATAFORMAS */
+.mp-logos{
+overflow:hidden;
+padding-top:10px;
+}
+
+.mp-track{
+display:flex;
+gap:90px;
+width:max-content;
+animation:slideX 24s linear infinite;
+align-items:center;
+}
+
+.mp-track img{
+height:70px;
+
+opacity:.82;
+
+filter:
+grayscale(100%)
+brightness(1.4);
+
+transition:.3s;
+}
+
+.mp-track img:hover{
+opacity:1;
+transform:scale(1.08);
+}
+
+@keyframes slideX{
+0%{transform:translateX(0)}
+100%{transform:translateX(-50%)}
+}
+
+/* CARDS */
+.mp-5{
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:28px;
+
+max-width:1320px;
+
+margin:0 auto;
+padding:0 20px;
+}
+
+.mp-4{
+grid-template-columns:repeat(4,1fr);
+}
+
+.mp-card{
+position:relative;
+
+overflow:hidden;
+
+padding:38px 34px;
+
+border-radius:32px;
+
+border:1px solid rgba(70,120,255,.12);
+
+background:
+linear-gradient(
+180deg,
+rgba(10,16,34,.96),
+rgba(5,8,18,.98)
+);
+
+min-height:240px;
+
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+
+transition:
+transform .35s ease,
+box-shadow .35s ease,
+border-color .35s ease;
+}
+
+.mp-card::before{
+content:'';
+
+position:absolute;
+inset:0;
+
+background:
+radial-gradient(
+circle at top left,
+rgba(31,146,255,.16),
+transparent 42%
+);
+
+pointer-events:none;
+}
+
+.mp-card h3{
+line-height:1.3;
+}
+
+.mp-card:hover{
+transform:
+translateY(-10px)
+scale(1.015);
+
+border-color:#3291ff;
+
+box-shadow:
+0 10px 50px rgba(32,122,255,.16),
+0 24px 60px rgba(0,0,0,.42);
+}
+
+.mp-card h3{
+font-size:28px;
+line-height:1.05;
+font-weight:900;
+letter-spacing:-.04em;
+margin:0 0 18px;
+max-width:100%;
+}
+
+.mp-services{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:28px;
+}
+
+.mp-services .mp-service-card{
+grid-column:span 2;
+}
+
+.mp-services .mp-service-card:nth-child(4){
+grid-column:2 / span 2;
+}
+
+.mp-services .mp-service-card:nth-child(5){
+grid-column:4 / span 2;
+}
+
+.mp-service-card{
+position:relative;
+overflow:hidden;
+
+padding:30px;
+min-height:210px;
+
+border-radius:32px;
+
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,.04),
+rgba(255,255,255,.015));
+
+border:1px solid rgba(255,255,255,.06);
+
+transition:.35s;
+}
+
+.mp-service-card::before{
+content:'';
+position:absolute;
+inset:0;
+
+background:
+radial-gradient(
+circle at top right,
+rgba(45,140,255,.18),
+transparent 42%);
+
+opacity:0;
+transition:.35s;
+}
+
+.mp-service-card:hover{
+transform:translateY(-8px);
+
+border-color:#2d8cff;
+
+box-shadow:
+0 0 24px rgba(45,140,255,.14),
+0 0 80px rgba(45,140,255,.06);
+}
+
+.mp-service-card:hover::before{
+opacity:1;
+}
+
+.mp-service-icon{
+font-size:30px;
+margin-bottom:22px;
+}
+
+.mp-service-card h3{
+font-size:22px;
+line-height:1.1;
+font-weight:800;
+margin:0 0 18px;
+}
+
+.mp-service-card p{
+font-size:15px;
+line-height:1.8;
+color:#b8c0d8;
+margin:0;
+max-width:320px;
+}
+
+/* CTA */
+.mp-cta{
+padding:70px 0 100px;
+text-align:center;
+}
+
+.mp-cta .btn{
+font-size:16px !important;
+padding:14px 26px !important;
+border-radius:16px !important;
+
+min-width:240px;
+width:auto;
+
+box-shadow:
+0 0 20px rgba(45,140,255,.22);
+}
+
+/* RESPONSIVO */
+@media(max-width:1180px){
+
+.mp-5{
+grid-template-columns:repeat(2,1fr);
+}
+
+.mp-4{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:780px){
+
+.mp-hero{
+padding:130px 0 70px;
+}
+
+.mp-title{
+font-size:58px;
+}
+
+.mp-sub{
+font-size:18px;
+line-height:1.7;
+}
+
+.mp-2col,
+.mp-5,
+.mp-4{
+grid-template-columns:1fr;
+}
+
+.mp-track{
+gap:42px;
+}
+
+.mp-track img{
+height:38px;
+}
+
+.mp-cta .btn{
+min-width:auto;
+width:100%;
+font-size:20px !important;
+padding:18px 28px !important;
+}
+
+.mp-actions{
+flex-direction:column;
+align-items:flex-start;
+}
+
+}
+
+.mp-cta{
+position:relative;
+}
+
+.mp-cta::before{
+content:'';
+
+position:absolute;
+width:520px;
+height:520px;
+
+background:
+radial-gradient(circle,
+rgba(30,167,255,.12),
+transparent 70%);
+
+left:50%;
+top:50%;
+
+transform:translate(-50%,-50%);
+
+pointer-events:none;
+}
+
+.btn-primary{
+background:
+linear-gradient(
+90deg,
+#179bff,
+#4a7dff,
+#6d5dff
+) !important;
+
+box-shadow:
+0 10px 40px rgba(30,167,255,.24);
+
+border:none !important;
+}
+
+.btn-primary:hover{
+transform:translateY(-2px);
+
+box-shadow:
+0 16px 48px rgba(30,167,255,.34);
+}
+
+/* ===== PREMIUM LIST SECTIONS ===== */
+
+.pm-block{
+max-width:1200px;
+margin:140px auto;
+padding:0 24px;
+}
+
+.pm-title{
+font-size:72px;
+font-weight:900;
+line-height:1.08;
+letter-spacing:-3px;
+
+padding-top:10px;
+padding-bottom:10px;
+
+margin-bottom:48px;
+
+background:linear-gradient(180deg,#fff 0%,#d7dff7 100%);
+
+background-clip:text;
+-webkit-background-clip:text;
+
+color:transparent;
+-webkit-text-fill-color:transparent;
+}
+
+.pm-card{
+position:relative;
+overflow:hidden;
+
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,.04),
+rgba(255,255,255,.015));
+
+border:1px solid rgba(255,255,255,.06);
+
+border-radius:38px;
+
+padding:42px;
+
+transition:.35s;
+}
+
+.pm-card::before{
+content:'';
+position:absolute;
+inset:0;
+
+background:
+radial-gradient(
+circle at top right,
+rgba(45,140,255,.14),
+transparent 42%);
+
+opacity:0;
+transition:.35s;
+}
+
+.pm-card:hover{
+transform:translateY(-8px);
+
+border-color:#2d8cff;
+
+box-shadow:
+0 0 24px rgba(45,140,255,.12),
+0 0 80px rgba(45,140,255,.05);
+}
+
+.pm-card:hover::before{
+opacity:1;
+}
+
+.pm-list-section{
+max-width:1100px;
+margin:0 auto;
+padding:70px 20px;
+}
+
+.pm-list-title{
+font-size:58px;
+font-weight:900;
+line-height:1.05;
+letter-spacing:-2px;
+
+text-align:center;
+
+margin-bottom:40px;
+
+background:linear-gradient(180deg,#ffffff 0%,#d7dff7 100%);
+background-clip:text;
+-webkit-background-clip:text;
+
+color:transparent;
+-webkit-text-fill-color:transparent;
+}
+
+.pm-list-card{
+background:linear-gradient(180deg,#081226 0%,#050816 100%);
+border:1px solid rgba(60,90,255,.14);
+
+border-radius:28px;
+
+padding:18px 28px;
+
+max-width:980px;
+margin:0 auto;
+
+box-shadow:
+0 0 30px rgba(34,102,255,.05),
+inset 0 1px 0 rgba(255,255,255,.03);
+}
+
+.pm-list-item{
+display:flex;
+align-items:center;
+gap:18px;
+
+padding:18px 0;
+
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.pm-list-item:last-child{
+border-bottom:none;
+padding-bottom:0;
+}
+
+.pm-list-icon{
+width:42px;
+height:42px;
+
+border-radius:14px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:15px;
+
+background:linear-gradient(135deg,#1ea0ff 0%,#6c63ff 100%);
+
+box-shadow:0 0 20px rgba(30,160,255,.24);
+
+flex-shrink:0;
+}
+
+.pm-list-item span{
+font-size:18px;
+font-weight:700;
+color:#fff;
+letter-spacing:-0.3px;
+}
+
+@media(max-width:768px){
+
+.pm-list-title{
+font-size:40px;
+letter-spacing:-1px;
+}
+
+.pm-list-card{
+padding:18px 20px;
+}
+
+.pm-list-item span{
+font-size:16px;
+}
+
+}
+
+@media(max-width:768px){
+
+.pm-list-section{
+padding:70px 20px;
+}
+
+.pm-list-title{
+font-size:46px;
+letter-spacing:-2px;
+margin-bottom:36px;
+}
+
+.pm-list-card{
+padding:20px 22px;
+border-radius:28px;
+}
+
+.pm-list-item{
+gap:18px;
+padding:20px 0;
+}
+
+.pm-list-icon{
+width:42px;
+height:42px;
+font-size:16px;
+}
+
+.pm-list-item span{
+font-size:18px;
+}
+
+}
+
+/* CTA FINAL */
+
+.pm-cta-wrap{
+margin-top:120px;
+display:flex;
+justify-content:center;
+}
+
+.pm-cta{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+
+padding:26px 56px;
+
+border-radius:26px;
+
+font-size:34px;
+font-weight:800;
+
+background:
+linear-gradient(
+90deg,
+#1ea7ff,
+#6c63ff);
+
+color:#fff;
+text-decoration:none;
+
+box-shadow:
+0 0 40px rgba(45,140,255,.28);
+
+transition:.35s;
+}
+
+.pm-cta:hover{
+transform:translateY(-6px) scale(1.02);
+
+box-shadow:
+0 0 70px rgba(45,140,255,.4);
+}
+
+.affiliate-cta-box{
+position:relative;
+overflow:hidden;
+
+padding:70px;
+
+border-radius:34px;
+
+background:
+radial-gradient(
+circle at top right,
+rgba(45,140,255,.18),
+transparent 30%
+),
+
+linear-gradient(
+145deg,
+rgba(255,255,255,.04),
+rgba(255,255,255,.015)
+);
+
+border:1px solid rgba(255,255,255,.08);
+
+text-align:center;
+}
+
+.affiliate-cta-box::before{
+content:'';
+position:absolute;
+width:500px;
+height:500px;
+
+background:
+radial-gradient(
+circle,
+rgba(45,140,255,.14),
+transparent 70%
+);
+
+top:-250px;
+right:-150px;
+
+filter:blur(20px);
+}
+
+.affiliate-cta-box span{
+display:block;
+margin-bottom:18px;
+
+font-size:13px;
+font-weight:900;
+letter-spacing:.16em;
+color:#2d8cff;
+}
+
+.affiliate-cta-box h2{
+font-size:clamp(34px,4vw,58px);
+line-height:1.05;
+font-weight:900;
+
+max-width:820px;
+margin:0 auto 20px;
+
+letter-spacing:-.04em;
+}
+
+.affiliate-cta-box p{
+max-width:720px;
+margin:0 auto 34px;
+
+font-size:18px;
+line-height:1.8;
+color:#b8c0d8;
+}
+
+.affiliate-cta-box .btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+
+width:auto;
+min-width:260px;
+
+height:auto;
+
+padding:16px 34px !important;
+
+font-size:18px !important;
+font-weight:800;
+
+border-radius:18px;
+
+margin:0 auto;
+
+box-shadow:
+0 0 20px rgba(45,140,255,.22);
+}
+
+.affiliate-cta-box .btn:hover{
+transform:translateY(-3px);
+
+box-shadow:
+0 16px 48px rgba(30,167,255,.34);
+}
+
+@media(max-width:780px){
+
+.affiliate-cta-box{
+padding:42px 24px;
+}
+
+.affiliate-cta-box h2{
+font-size:42px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+<div class="container header-inner">
+
+<a href="index.html" class="brand">
+<img src="https://tag.vc/wp-content/uploads/2025/07/tag-logotipo-01.svg" class="brand-logo" alt="TAG">
+</a>
+
+<nav class="nav">
+<a href="index.html" data-i18n="nav.home">Home</a>
+<a href="#services" data-i18n="nav.services">Serviços</a>
+<a href="#platforms" data-i18n="nav.platforms">Plataformas</a>
+<a href="#deliver" data-i18n="nav.deliver">Entregamos</a>
+<a href="#contact" data-i18n="nav.contact">Contato</a>
+</nav>
+
+<div class="header-actions">
+<a
+href="#contact"
+class="btn btn-primary btn-header"
+data-i18n="cta_sales">Falar com vendas</a>
+</div>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section class="mp-hero">
+
+<div class="mp-wrap">
+
+<span
+class="mp-tag"
+data-i18n="programaticaAdvertiser.hero.tag">
+PROGRAMÁTICA</span>
+
+<h1
+class="mp-title"
+data-i18n-html="programaticaAdvertiser.hero.title">
+Programática
+para<br>
+<span>Anunciantes.</span>
+</h1>
+
+<p
+class="mp-sub"
+data-i18n="programaticaAdvertiser.hero.sub">
+Mídia programática para anunciantes que desejam escala além dos walled gardens.
+</p>
+
+<p
+class="mp-sub"
+style="margin-top:-10px;"
+data-i18n="programaticaAdvertiser.hero.sub2">
+Expanda, alcance através de display, vídeo, native, retargeting e inventário premium com mais controle e diversificação.
+</p>
+
+<div class="mp-actions">
+
+<a
+href="#contact"
+class="btn btn-primary"
+data-i18n="programaticaAdvertiser.sections.cta_sales">
+Falar com vendas
+</a>
+
+<a
+href="#services"
+class="btn btn-dark"
+data-i18n="cta_explore">
+Explorar soluções
+</a>
+
+</div>
+
+</div>
+</section>
+
+<!-- O QUE FAZEMOS -->
+<section class="mp-section" id="services">
+
+<div class="mp-wrap">
+
+<div class="mp-head">
+<h2 data-i18n="programaticaAdvertiser.sections.titles.0">
+O Que Fazemos
+</h2>
+</div>
+
+<div class="mp-services">
+
+<div class="mp-service-card">
+
+<div class="mp-service-icon">📡</div>
+
+<h3 data-i18n="programaticaAdvertiser.sections.whatWeDo.0.title">
+Compra via DSP
+</h3>
+
+<p data-i18n="programaticaAdvertiser.sections.whatWeDo.0.sub">
+Compra programática em DSPs com otimização contínua e foco em performance.
+</p>
+
+</div>
+
+<div class="mp-service-card">
+
+<div class="mp-service-icon">🎯</div>
+
+<h3 data-i18n="programaticaAdvertiser.sections.whatWeDo.1.title">
+Estratégia de audiência
+</h3>
+
+<p data-i18n="programaticaAdvertiser.sections.whatWeDo.1.sub">
+Segmentação inteligente baseada em comportamento, interesse e intenção.
+</p>
+
+</div>
+
+<div class="mp-service-card">
+
+<div class="mp-service-icon">🏆</div>
+
+<h3 data-i18n="programaticaAdvertiser.sections.whatWeDo.2.title">
+Acesso a inventário premium
+</h3>
+
+<p data-i18n="programaticaAdvertiser.sections.whatWeDo.2.sub">
+Acesso a publishers premium e ambientes seguros para marcas.
+</p>
+
+</div>
+
+<div class="mp-service-card">
+
+<div class="mp-service-icon">🔁</div>
+
+<h3 data-i18n="programaticaAdvertiser.sections.whatWeDo.3.title">
+Estratégia de retargeting
+</h3>
+
+<p data-i18n="programaticaAdvertiser.sections.whatWeDo.3.sub">
+Reconexão com usuários qualificados para aumentar conversão e recorrência.
+</p>
+
+</div>
+
+<div class="mp-service-card">
+
+<div class="mp-service-icon">⚡</div>
+
+<h3 data-i18n="programaticaAdvertiser.sections.whatWeDo.4.title">
+Ativação cross-channel
+</h3>
+
+<p data-i18n="programaticaAdvertiser.sections.whatWeDo.4.sub">
+Execução integrada entre display, vídeo, native e múltiplos canais.
+</p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- PLATAFORMAS -->
+<section class="mp-section" id="platforms">
+
+<div class="mp-wrap">
+
+<div class="mp-head">
+<h2 data-i18n="programaticaAdvertiser.sections.titles.1">Plataformas que Impulsionam Resultados</h2>
+</div>
+
+<div class="mp-logos">
+<div class="mp-track">
+
+<img src="https://tag.vc/wp-content/uploads/2025/07/linkedin-logo.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/tiktok-logo.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/youtube-logo.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/google-ads.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/meta-logo.png">
+
+<img src="https://tag.vc/wp-content/uploads/2025/07/linkedin-logo.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/tiktok-logo.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/youtube-logo.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/google-ads.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/meta-logo.png">
+
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CANAIS -->
+<section class="pm-list-section">
+
+<h2 class="pm-list-title"
+    data-i18n="programaticaAdvertiser.sections.titles.2">Canais / Inventário</h2>
+
+<div class="pm-list-card">
+
+<div class="pm-list-item">
+    <div class="pm-list-icon">✦</div>
+    <span data-i18n="programaticaAdvertiser.sections.channels.0">
+        Display
+    </span>
+</div>
+
+<div class="pm-list-item">
+    <div class="pm-list-icon">✦</div>
+    <span data-i18n="programaticaAdvertiser.sections.channels.1">
+        Video
+    </span>
+</div>
+
+<div class="pm-list-item">
+    <div class="pm-list-icon">✦</div>
+    <span data-i18n="programaticaAdvertiser.sections.channels.2">
+        Native
+    </span>
+</div>
+
+<div class="pm-list-item">
+    <div class="pm-list-icon">✦</div>
+    <span data-i18n="programaticaAdvertiser.sections.channels.3">
+        Retargeting
+    </span>
+</div>
+
+</div>
+</section>
+
+<!-- O QUE ENTREGAMOS -->
+<section class="pm-list-section" id="deliver">
+
+<h2 class="pm-list-title"
+    data-i18n="programaticaAdvertiser.sections.titles.3">
+    O Que Entregamos
+</h2>
+
+<div class="pm-list-card">
+
+<div class="pm-list-item">
+    <div class="pm-list-icon">✦</div>
+    <span data-i18n="programaticaAdvertiser.sections.deliver.0">
+        Planejamento de mídia e segmentação de audiência
+    </span>
+</div>
+
+<div class="pm-list-item">
+    <div class="pm-list-icon">✦</div>
+    <span data-i18n="programaticaAdvertiser.sections.deliver.1">
+        Gestão de inventário e bidding
+    </span>
+</div>
+
+<div class="pm-list-item">
+    <div class="pm-list-icon">✦</div>
+    <span data-i18n="programaticaAdvertiser.sections.deliver.2">
+        Otimização de campanhas
+    </span>
+</div>
+
+<div class="pm-list-item">
+    <div class="pm-list-icon">✦</div>
+    <span data-i18n="programaticaAdvertiser.sections.deliver.3">
+        Análise de performance
+    </span>
+</div>
+
+<div class="pm-list-item">
+    <div class="pm-list-icon">✦</div>
+    <span data-i18n="programaticaAdvertiser.sections.deliver.4">
+        Operação escalável de compra de mídia
+    </span>
+</div>
+
+</div>
+</section>
+
+<!-- POR QUE TAG -->
+<section class="pm-list-section">
+
+<h2 class="pm-list-title"
+    data-i18n="programaticaAdvertiser.sections.titles.4">
+    Por que a TAG para Programática
+</h2>
+
+<div class="pm-list-card">
+
+<div class="pm-list-item">
+    <div class="pm-list-icon">✦</div>
+    <span data-i18n="programaticaAdvertiser.sections.why.0">
+        Diversificação além das Big Techs
+    </span>
+</div>
+
+<div class="pm-list-item">
+    <div class="pm-list-icon">✦</div>
+    <span data-i18n="programaticaAdvertiser.sections.why.1">
+        Mais controle sobre inventário
+    </span>
+</div>
+
+<div class="pm-list-item">
+    <div class="pm-list-icon">✦</div>
+    <span data-i18n="programaticaAdvertiser.sections.why.2">
+        Segmentação avançada
+    </span>
+</div>
+
+<div class="pm-list-item">
+    <div class="pm-list-icon">✦</div>
+    <span data-i18n="programaticaAdvertiser.sections.why.3">
+        Escala global de alcance
+    </span>
+</div>
+
+</div>
+</section>
+
+<!-- CTA -->
+<section class="mp-cta" id="contact">
+
+<div class="mp-wrap">
+
+<div class="affiliate-cta-box">
+
+<span data-i18n="programaticaAdvertiser.sections.ctaTag">
+Programmatic Media Engine
+</span>
+
+<h2 data-i18n="programaticaAdvertiser.sections.ctaTitle">
+Escale sua operação de mídia programática com controle e performance.
+</h2>
+
+<p data-i18n="programaticaAdvertiser.sections.ctaSub">
+Estruturamos campanhas programáticas focadas em alcance, segmentação, inventário premium e aquisição escalável.
+</p>
+
+<a
+href="https://wa.me/5521998931555"
+class="btn btn-primary"
+data-i18n="programaticaAdvertiser.sections.cta">
+Construir estratégia programática
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div class="container footer-inner">
+
+<img
+src="https://tag.vc/wp-content/uploads/2025/07/tag-logotipo-01.svg"
+class="footer-logo"
+alt="TAG">
+
+<p data-i18n="footer">
+2025 © TAG — Todos os direitos reservados
+</p>
+
+</div>
+
+<div class="container footer-custom">
+
+<div class="footer-block">
+
+<p>
+<strong data-i18n="global.footer_company.company">
+Razão Social
+</strong>:
+<span data-i18n="global.footer_company.company_name">
+MEDIEN INTERNET LTDA
+</span>
+</p>
+
+<p>
+<strong data-i18n="global.footer_company.cnpj">
+CNPJ
+</strong>:
+<span data-i18n="global.footer_company.cnpj_number">
+23.992.680/0001-72
+</span>
+</p>
+
+</div>
+
+<div class="footer-block">
+
+<h4 data-i18n="global.footer_company.address_title">
+Endereço
+</h4>
+
+<p data-i18n="global.footer_company.address_line1">
+R Sargento José da Silva, 119
+</p>
+
+<p data-i18n="global.footer_company.address_line2">
+Lote 63 Pal 16070 Qdr B
+</p>
+
+<p data-i18n="global.footer_company.address_line3">
+João – Rio de Janeiro – RJ
+</p>
+
+<p data-i18n="global.footer_company.address_line4">
+CEP 22611-140
+</p>
+
+</div>
+
+<div class="footer-block">
+
+<h4 data-i18n="global.footer_company.location_title">
+Localização
+</h4>
+
+<a
+href="https://maps.google.com/?q=R+Sargento+José+da+Silva+119+Rio+de+Janeiro"
+target="_blank"
+data-i18n="global.footer_company.location_cta">
+Ver no mapa
+</a>
+
+</div>
+
+<div class="footer-block">
+
+<h4 data-i18n="global.footer_company.contact_title">
+Contato
+</h4>
+
+<a
+href="mailto:financeiro@medien.com.br"
+data-i18n="global.footer_company.email">
+financeiro@medien.com.br
+</a>
+
+<a
+href="tel:+552122448850"
+data-i18n="global.footer_company.phone">
+(21) 2244-8850
+</a>
+
+</div>
+
+<div class="footer-block">
+
+<h4 data-i18n="global.footer_company.social_title">
+Redes sociais
+</h4>
+
+<div class="footer-social">
+
+<a
+href="https://instagram.com/seuusuario"
+target="_blank"
+data-i18n="global.footer_company.instagram">
+Instagram
+</a>
+
+<span>|</span>
+
+<a
+href="https://linkedin.com/company/seuusuario"
+target="_blank"
+data-i18n="global.footer_company.linkedin">
+LinkedIn
+</a>
+
+<span>|</span>
+
+<a
+href="https://facebook.com/seuusuario"
+target="_blank"
+data-i18n="global.footer_company.facebook">
+Facebook
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

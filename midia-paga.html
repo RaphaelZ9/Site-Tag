@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>TAG | Mídia Paga</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+body{
+margin:0;
+background:#05070d;
+color:#fff;
+font-family:'Inter',sans-serif;
+overflow-x:hidden;
+}
+
+.mp-wrap{
+width:min(1320px,calc(100% - 42px));
+margin:auto;
+}
+
+/* HERO */
+.mp-hero{
+position:relative;
+overflow:hidden;
+padding:170px 0 120px;
+
+background:
+linear-gradient(
+90deg,
+rgba(5,6,10,.96) 0%,
+rgba(5,6,10,.84) 38%,
+rgba(5,6,10,.28) 68%,
+rgba(5,6,10,0) 100%),
+url('https://tag.vc/wp-content/uploads/2025/07/bg-homepage-2.webp');
+
+background-size:cover;
+background-position:right center;
+}
+
+.mp-hero::before{
+content:'';
+position:absolute;
+width:700px;
+height:700px;
+right:-180px;
+top:-120px;
+
+background:
+radial-gradient(circle,
+rgba(40,120,255,.22) 0%,
+rgba(123,97,255,.10) 35%,
+transparent 72%);
+
+filter:blur(30px);
+pointer-events:none;
+}
+
+.mp-tag{
+display:block;
+font-size:13px;
+font-weight:900;
+letter-spacing:.18em;
+color:#1ea7ff;
+margin-bottom:18px;
+}
+
+.mp-title{
+  font-size:clamp(68px,7vw,112px);
+  line-height:.95;
+  font-weight:900;
+  letter-spacing:-.07em;
+  max-width:980px;
+
+text-wrap:balance;
+overflow-wrap:break-word;
+}
+
+.mp-title span{
+background:linear-gradient(90deg,#1ea7ff,#4f7dff,#7b61ff);
+-webkit-background-clip:text;
+background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.mp-sub{
+max-width:760px;
+font-size:22px;
+line-height:1.8;
+color:#b8c0d8;
+margin-bottom:36px;
+}
+
+.mp-actions{
+display:flex;
+gap:16px;
+flex-wrap:wrap;
+}
+
+/* SECTIONS */
+.mp-section{
+padding:95px 0;
+}
+
+.mp-head{
+text-align:center;
+margin-bottom:32px;
+}
+
+.mp-head h2{
+font-size:clamp(42px,5vw,64px);
+
+font-weight:900;
+
+letter-spacing:-.04em;
+
+line-height:1;
+
+margin:0 0 70px;
+
+opacity:.98;
+}
+
+/* BOX GRID */
+.mp-grid{
+display:grid;
+gap:22px;
+}
+
+/* O QUE FAZEMOS */
+
+.mp-listbox ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.mp-listbox li{
+padding:18px 0;
+font-size:18px;
+color:#d8e0f5;
+border-top:1px solid rgba(255,255,255,.04);
+}
+
+.mp-listbox li:first-child{
+border-top:none;
+}
+
+/* PLATAFORMAS */
+.mp-logos{
+overflow:hidden;
+padding-top:10px;
+}
+
+.mp-track{
+display:flex;
+gap:90px;
+width:max-content;
+animation:slideX 24s linear infinite;
+align-items:center;
+}
+
+.mp-track img{
+height:62px;
+opacity:.72;
+filter:grayscale(100%) brightness(1.25);
+}
+
+@keyframes slideX{
+0%{transform:translateX(0)}
+100%{transform:translateX(-50%)}
+}
+
+/* CARDS */
+.mp-5{
+grid-template-columns:repeat(5,1fr);
+}
+
+.mp-4{
+grid-template-columns:repeat(4,minmax(260px,1fr));
+gap:24px;
+}
+
+.mp-card{
+position:relative;
+overflow:hidden;
+
+padding:30px 24px;
+
+min-height:190px;
+
+border-radius:28px;
+
+border:1px solid rgba(255,255,255,.06);
+
+background:
+linear-gradient(
+180deg,
+rgba(15,23,42,.92) 0%,
+rgba(2,6,23,.96) 100%
+);
+
+transition:
+transform .35s ease,
+border-color .35s ease,
+box-shadow .35s ease;
+}
+
+.mp-card:hover{
+transform:translateY(-8px);
+
+border-color:rgba(59,130,246,.45);
+
+box-shadow:
+0 0 30px rgba(59,130,246,.12),
+0 20px 40px rgba(0,0,0,.35);
+}
+
+.mp-card-line{
+width:60px;
+height:4px;
+
+border-radius:999px;
+
+margin-bottom:22px;
+
+background:
+linear-gradient(
+90deg,
+#3b82f6,
+#8b5cf6
+);
+}
+
+.mp-card h3{
+font-size:20px;
+font-weight:800;
+margin:0 0 12px;
+}
+
+.mp-card p{
+font-size:15px;
+line-height:1.7;
+color:#b8c0d8;
+margin:0;
+}
+
+/* CTA */
+.mp-cta{
+padding:70px 0 100px;
+text-align:center;
+}
+
+.mp-cta .btn{
+font-size:16px !important;
+padding:14px 26px !important;
+border-radius:16px !important;
+
+min-width:240px;
+width:auto;
+
+box-shadow:
+0 0 20px rgba(45,140,255,.22);
+}
+
+/* RESPONSIVO */
+@media(max-width:1180px){
+
+.mp-5{
+grid-template-columns:repeat(5,minmax(220px,1fr));
+max-width:1500px;
+margin:0 auto;
+}
+
+.mp-4{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:780px){
+
+.mp-hero{
+padding:130px 0 70px;
+}
+
+.mp-title{
+font-size:58px;
+}
+
+.mp-sub{
+font-size:18px;
+line-height:1.7;
+}
+
+.mp-2col,
+.mp-5,
+.mp-4{
+grid-template-columns:1fr;
+}
+
+.mp-track{
+gap:42px;
+}
+
+.mp-track img{
+height:38px;
+}
+
+.mp-cta .btn{
+min-width:auto;
+width:100%;
+font-size:20px !important;
+padding:18px 28px !important;
+}
+
+.mp-actions{
+flex-direction:column;
+align-items:flex-start;
+}
+
+}
+
+.mp-services{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px;
+margin-top:48px;
+}
+
+.mp-service-card{
+position:relative;
+overflow:hidden;
+
+padding:28px;
+min-height:180px;
+
+border-radius:34px;
+
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,.045),
+rgba(255,255,255,.015));
+
+border:1px solid rgba(255,255,255,.06);
+
+transition:.35s;
+}
+
+.mp-service-card::before{
+content:'';
+position:absolute;
+inset:0;
+
+background:
+radial-gradient(
+circle at top right,
+rgba(45,140,255,.16),
+transparent 42%);
+
+opacity:0;
+transition:.35s;
+}
+
+.mp-service-card:hover{
+transform:translateY(-8px);
+
+border-color:#2d8cff;
+
+box-shadow:
+0 0 24px rgba(45,140,255,.12),
+0 0 80px rgba(45,140,255,.05);
+}
+
+.mp-service-card:hover::before{
+opacity:1;
+}
+
+.mp-service-icon{
+font-size:30px;
+margin-bottom:22px;
+}
+
+.mp-service-card h3{
+font-size:  18px;
+line-height:1.1;
+font-weight:800;
+margin:0 0 18px;
+}
+
+.mp-service-card p{
+font-size:15px;
+line-height:1.8;
+color:#b8c0d8;
+margin:0;
+max-width:320px;
+}
+
+.mp-final-box{
+padding:58px 70px;
+border-radius:33px;
+
+text-align:center;
+
+background:
+linear-gradient(
+145deg,
+rgba(20,120,255,.18),
+rgba(123,97,255,.08));
+
+border:1px solid rgba(255,255,255,.08);
+
+position:relative;
+overflow:hidden;
+}
+
+.mp-final-box h2{
+font-size:54px;
+line-height:1.1;
+font-weight:900;
+margin-bottom:18px;
+}
+
+.mp-final-box p{
+max-width:760px;
+margin:auto auto 36px;
+font-size:20px;
+line-height:1.8;
+color:#c0c8df;
+}
+
+@media(max-width:980px){
+
+.mp-services{
+grid-template-columns:1fr;
+}
+
+}
+
+.mp-grid{
+max-width:1540px;
+margin:0 auto 60px;
+}
+
+.mp-final-cta{
+padding:90px 0 120px;
+margin-top:70px;
+}
+
+.mp-final-cta .mp-wrap{
+max-width:1580px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+<div class="container header-inner">
+
+<a href="index.html" class="brand">
+<img src="https://tag.vc/wp-content/uploads/2025/07/tag-logotipo-01.svg" class="brand-logo" alt="TAG">
+</a>
+
+<nav class="nav">
+<a href="index.html" data-i18n="nav.home">Home</a>
+<a href="#services" data-i18n="nav.services">Serviços</a>
+<a href="#platforms" data-i18n="nav.platforms">Plataformas</a>
+<a href="#deliver" data-i18n="nav.deliver">Entregamos</a>
+<a href="#contact" data-i18n="nav.contact">Contato</a>
+</nav>
+
+<div class="header-actions">
+<a
+href="#contact"
+class="btn btn-primary btn-header"
+data-i18n="cta_sales">Falar com vendas</a>
+</div>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section class="mp-hero">
+
+<div class="mp-wrap">
+
+<span class="mp-tag" data-i18n="hero.tag">PAID MEDIA</span>
+
+<h1 class="mp-title" data-i18n="hero.title">
+Mídia<br>
+<span>Paga.</span>
+</h1>
+
+<p class="mp-sub" data-i18n="hero.sub">
+Planejamos, lançamos e otimizamos campanhas nos principais canais pagos com foco total em performance, escala e aquisição qualificada.
+</p>
+
+<div class="mp-actions">
+<a
+href="#contact"
+class="btn btn-primary"
+data-i18n="cta_sales">Falar com vendas</a>
+<a
+href="#services"
+class="btn btn-dark"
+data-i18n="cta_explore">Explorar soluções</a>
+</div>
+
+</div>
+</section>
+
+<!-- O QUE FAZEMOS -->
+<section class="mp-section" id="services">
+
+<div class="mp-wrap">
+
+<div class="mp-head">
+<h2 data-i18n="sections.titles.0">O Que Fazemos</h2>
+</div>
+
+<div class="mp-services">
+
+<div class="mp-service-card">
+
+<div class="mp-service-icon">📱</div>
+
+<h3 data-i18n="sections.services.0.title">
+Paid Social
+</h3>
+
+<p data-i18n="sections.services.0.sub">
+Campanhas escaláveis em Meta, TikTok e LinkedIn com foco em aquisição e performance.
+</p>
+
+</div>
+
+<div class="mp-service-card">
+
+<div class="mp-service-icon">🔎</div>
+
+<h3 data-i18n="sections.services.1.title">
+Search
+</h3>
+
+<p data-i18n="sections.services.1.sub">
+Estratégias de Google Ads orientadas para intenção, conversão e escala.
+</p>
+
+</div>
+
+<div class="mp-service-card">
+
+<div class="mp-service-icon">🎥</div>
+
+<h3 data-i18n="sections.services.2.title">
+Vídeo
+</h3>
+
+<p data-i18n="sections.services.2.sub">
+Distribuição de campanhas em vídeo com foco em awareness e performance.
+</p>
+
+</div>
+
+<div class="mp-service-card">
+
+<div class="mp-service-icon">🎯</div>
+
+<h3 data-i18n="sections.services.3.title">
+Retargeting
+</h3>
+
+<p data-i18n="sections.services.3.sub">
+Reconexão inteligente com usuários qualificados para aumentar conversão.
+</p>
+
+</div>
+
+<div class="mp-service-card">
+
+<div class="mp-service-icon">⚙️</div>
+
+<h3 data-i18n="sections.services.4.title">
+Otimização contínua
+</h3>
+
+<p data-i18n="sections.services.4.sub">
+Monitoramento diário, testes criativos e melhoria contínua de performance.
+</p>
+
+</div>
+
+<div class="mp-service-card">
+
+<div class="mp-service-icon">📈</div>
+
+<h3 data-i18n="sections.services.5.title">
+Escala
+</h3>
+
+<p data-i18n="sections.services.5.sub">
+Estrutura preparada para crescimento sustentável e previsível.
+</p>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- PLATAFORMAS -->
+<section class="mp-section" id="platforms">
+
+<div class="mp-wrap">
+
+<div class="mp-head">
+<h2 data-i18n="sections.titles.1">Plataformas que Impulsionam Resultados</h2>
+</div>
+
+<div class="mp-logos">
+<div class="mp-track">
+
+<img src="https://tag.vc/wp-content/uploads/2025/07/linkedin-logo.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/tiktok-logo.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/youtube-logo.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/google-ads.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/meta-logo.png">
+
+<img src="https://tag.vc/wp-content/uploads/2025/07/linkedin-logo.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/tiktok-logo.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/youtube-logo.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/google-ads.png">
+<img src="https://tag.vc/wp-content/uploads/2025/07/meta-logo.png">
+
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- O QUE ENTREGAMOS -->
+<section class="mp-section" id="deliver">
+
+<div class="mp-wrap">
+
+<div class="mp-head">
+<h2 data-i18n="sections.titles.2">O Que Entregamos</h2>
+</div>
+
+<div class="mp-grid mp-5">
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.deliver.0.title">Planejamento</h3>
+<p data-i18n="sections.deliver.0.sub">Estratégia personalizada com foco em resultados.</p>
+</div>
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.deliver.1.title">Full-funnel</h3>
+<p data-i18n="sections.deliver.1.sub">Estrutura completa para aquisição e escala.</p>
+</div>
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.deliver.2.title">Otimização</h3>
+<p data-i18n="sections.deliver.2.sub">Ajustes contínuos para elevar performance.</p>
+</div>
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.deliver.3.title">Criativos</h3>
+<p data-i18n="sections.deliver.3.sub">Testes constantes para descobrir vencedores.</p>
+</div>
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.deliver.4.title">Relatórios</h3>
+<p data-i18n="sections.deliver.4.sub">Dashboards claros para decisões rápidas.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- MELHOR PERFIL -->
+<section class="mp-section">
+
+<div class="mp-wrap">
+
+<div class="mp-head">
+<h2 data-i18n="sections.titles.3">Melhor Perfil</h2>
+</div>
+
+<div class="mp-grid mp-5">
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.fit.0.title">SaaS</h3>
+<p data-i18n="sections.fit.0.sub">Empresas buscando crescimento previsível.</p>
+</div>
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.fit.1.title">Apps</h3>
+<p data-i18n="sections.fit.1.sub">Aquisição e retenção com escala.</p>
+</div>
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.fit.2.title">E-commerce</h3>
+<p data-i18n="sections.fit.2.sub">Vendas com rentabilidade saudável.</p>
+</div>
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.fit.3.title">Serviços</h3>
+<p data-i18n="sections.fit.3.sub">Geração de demanda qualificada.</p>
+</div>
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.fit.4.title">Portais</h3>
+<p data-i18n="sections.fit.4.sub">Tráfego e monetização inteligente.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- POR QUE TAG -->
+<section class="mp-section">
+
+<div class="mp-wrap">
+
+<div class="mp-head">
+<h2 data-i18n="sections.titles.4">Por que a TAG para Mídia Paga</h2>
+</div>
+
+<div class="mp-grid mp-4">
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.why.0.title">Execução rápida</h3>
+<p data-i18n="sections.why.0.sub">Agilidade total na implementação e ajustes.</p>
+</div>
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.why.1.title">Tracking robusto</h3>
+<p data-i18n="sections.why.1.sub">Mensuração confiável e precisa.</p>
+</div>
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.why.2.title">Performance real</h3>
+<p data-i18n="sections.why.2.sub">Foco em CPA, ROAS e crescimento.</p>
+</div>
+
+<div class="mp-card">
+
+<div class="mp-card-line"></div>
+<h3 data-i18n="sections.why.3.title">Relatórios executivos</h3>
+<p data-i18n="sections.why.3.sub">Insights claros para tomada de decisão.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- CTA -->
+<section class="mp-final-cta" id="contact">
+
+<div class="mp-wrap">
+
+<div class="mp-final-box">
+
+<h2 data-i18n="midia.sections.final_cta.title">
+Pronto para escalar mídia com previsibilidade?
+</h2>
+
+<p data-i18n="midia.sections.final_cta.sub">
+Estratégia, mídia e performance conectados para crescimento real.
+</p>
+
+<a 
+href="https://wa.me/5521998931555"
+target="_blank"
+class="btn btn-primary"
+data-i18n="midia.sections.final_cta.button">
+Falar com especialista
+</a>
+
+</div>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+<div class="container footer-inner">
+
+<img
+src="https://tag.vc/wp-content/uploads/2025/07/tag-logotipo-01.svg"
+class="footer-logo"
+alt="TAG">
+
+<p data-i18n="footer">
+2025 © TAG — Todos os direitos reservados
+</p>
+
+</div>
+
+<div class="container footer-custom">
+
+<div class="footer-block">
+
+<p>
+<strong data-i18n="global.footer_company.company">
+Razão Social
+</strong>:
+<span data-i18n="global.footer_company.company_name">
+MEDIEN INTERNET LTDA
+</span>
+</p>
+
+<p>
+<strong data-i18n="global.footer_company.cnpj">
+CNPJ
+</strong>:
+<span data-i18n="global.footer_company.cnpj_number">
+23.992.680/0001-72
+</span>
+</p>
+
+</div>
+
+<div class="footer-block">
+
+<h4 data-i18n="global.footer_company.address_title">
+Endereço
+</h4>
+
+<p data-i18n="global.footer_company.address_line1">
+R Sargento José da Silva, 119
+</p>
+
+<p data-i18n="global.footer_company.address_line2">
+Lote 63 Pal 16070 Qdr B
+</p>
+
+<p data-i18n="global.footer_company.address_line3">
+João – Rio de Janeiro – RJ
+</p>
+
+<p data-i18n="global.footer_company.address_line4">
+CEP 22611-140
+</p>
+
+</div>
+
+<div class="footer-block">
+
+<h4 data-i18n="global.footer_company.location_title">
+Localização
+</h4>
+
+<a
+href="https://maps.google.com/?q=R+Sargento+José+da+Silva+119+Rio+de+Janeiro"
+target="_blank"
+data-i18n="global.footer_company.location_cta">
+Ver no mapa
+</a>
+
+</div>
+
+<div class="footer-block">
+
+<h4 data-i18n="global.footer_company.contact_title">
+Contato
+</h4>
+
+<a
+href="mailto:financeiro@medien.com.br"
+data-i18n="global.footer_company.email">
+financeiro@medien.com.br
+</a>
+
+<a
+href="tel:+552122448850"
+data-i18n="global.footer_company.phone">
+(21) 2244-8850
+</a>
+
+</div>
+
+<div class="footer-block">
+
+<h4 data-i18n="global.footer_company.social_title">
+Redes sociais
+</h4>
+
+<div class="footer-social">
+
+<a
+href="https://instagram.com/seuusuario"
+target="_blank"
+data-i18n="global.footer_company.instagram">
+Instagram
+</a>
+
+<span>|</span>
+
+<a
+href="https://linkedin.com/company/seuusuario"
+target="_blank"
+data-i18n="global.footer_company.linkedin">
+LinkedIn
+</a>
+
+<span>|</span>
+
+<a
+href="https://facebook.com/seuusuario"
+target="_blank"
+data-i18n="global.footer_company.facebook">
+Facebook
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

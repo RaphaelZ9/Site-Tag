@@ -1,0 +1,612 @@
+{
+  "global": {
+    "nav": {
+      "home": "Home",
+      "home_nav_about": "About",
+      "services": "Services",
+      "platforms": "Platforms",
+      "deliver": "Deliverables",
+      "contact": "Contact"
+    },
+
+    "cta_sales": "Talk to Sales",
+    "cta_explore": "Explore solutions",
+
+   "footer": "2025 © TAG — All rights reserved",
+
+    "footer_company": {
+      "company": "Company Name",
+      "company_name": "MEDIEN INTERNET LTDA",
+
+      "cnpj": "Tax ID",
+      "cnpj_number": "23.992.680/0001-72",
+
+      "address_title": "Address",
+
+      "address_line1": "R Sargento José da Silva, 119",
+      "address_line2": "Lote 63 Pal 16070 Qdr B",
+      "address_line3": "João – Rio de Janeiro – RJ",
+      "address_line4": "ZIP Code 22611-140",
+
+      "location_title": "Location",
+      "location_cta": "View on map",
+
+      "contact_title": "Contact",
+
+      "email": "financeiro@medien.com.br",
+      "phone": "(21) 2244-8850",
+
+      "social_title": "Social Media",
+
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
+    }
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "Growth Performance Hub",
+      "title": "Media.<br>Data.<br><span>Growth.</span>",
+      "sub": "We combine media, intelligence and performance to accelerate technology companies with predictable and scalable growth."
+    },
+
+    "about": {
+      "eyebrow": "Who We Are",
+
+      "title": "Growth Operators.<br>Not a Traditional Agency.",
+
+      "sub": "TAG is a media and performance hub specialized in scaling technology companies through data, acquisition and conversion intelligence.",
+
+      "cards": [
+        {
+          "title": "Real Growth",
+          "sub": "Focused on real business impact."
+        },
+        {
+          "title": "Technical Team",
+          "sub": "Experts in acquisition, analytics and scale."
+        },
+        {
+          "title": "Proprietary Method",
+          "sub": "Framework designed to replicate what works."
+        },
+        {
+          "title": "Partnership",
+          "sub": "We operate as an extension of your team."
+        }
+      ]
+    },
+
+    "solutions": {
+      "eyebrow": "Solutions",
+
+      "title": "Everything You Need to Scale",
+
+      "cards": [
+        {
+          "title": "Paid Media",
+          "sub": "Google, Meta, LinkedIn, TikTok and omnichannel acquisition.",
+          "link": "Click here →"
+        },
+        {
+          "title": "Affiliate Marketing",
+          "sub": "Strategic partnerships, affiliate channels and scalable growth.",
+          "link": "Click here →"
+        },
+        {
+          "title": "Programmatic for Advertisers",
+          "sub": "Programmatic media focused on performance and scale.",
+          "link": "Click here →"
+        },
+        {
+          "title": "Programmatic for Publishers",
+          "sub": "Smart monetization for publishers using technology and data.",
+          "link": "Click here →"
+        }
+        
+      ]
+    },
+    "brands": {
+      "title": "Platforms That Drive Results"
+    },
+
+    "cases": {
+      "eyebrow": "SUCCESS CASES",
+
+      "title": "Performance With Proof",
+
+      "cards": [
+        {
+          "title": "SaaS Case",
+
+          "sub": "Software as a Service",
+
+          "items": [
+            "+180% qualified leads",
+            "42% lower CPL",
+            "+27% shorter sales cycle"
+          ]
+        },
+
+        {
+          "title": "E-commerce Tech Case",
+
+          "sub": "Digital Store",
+
+          "items": [
+            "+3.5x ROAS increase",
+            "+240% revenue growth",
+            "+120% conversion increase"
+          ]
+        },
+
+        {
+          "title": "App Tech Case",
+
+          "sub": "Mobile Application",
+
+          "items": [
+            "+150% active users",
+            "35% CAC reduction",
+            "+220% 30-day retention"
+          ]
+        }
+      ]
+    },
+
+    "contact": {
+      "eyebrow": "CONTACT",
+
+      "title": "Talk to our specialists",
+
+      "sub": "Ready to boost your results? Our team is ready to help you grow with strategy, media and performance.",
+
+      "cards": [
+        {
+          "title": "WhatsApp",
+
+          "sub": "See our platform in action",
+
+          "items": [
+            "Free initial diagnosis",
+            "Strategic presentation",
+            "Custom growth plan"
+          ],
+
+          "cta": "Talk to us"
+        },
+
+        {
+          "title": "Support",
+
+          "sub": "Get answers from our team",
+
+          "items": [
+            "Commercial support",
+            "Technical clarification",
+            "Fast e-mail response"
+          ],
+
+          "cta": "Send e-mail"
+        }
+      ]
+    }
+  },
+"midia": {
+
+  "hero": {
+    "tag": "PAID MEDIA",
+    "title": "Paid<br><span>Media.</span>",
+    "sub": "We plan, launch and optimize campaigns across the main paid channels with total focus on performance, scale and qualified acquisition."
+  },
+
+  "sections": {
+
+    "titles": [
+      "What We Do",
+      "Platforms That Drive Results",
+      "What We Deliver",
+      "Best Fit",
+      "Why TAG for Paid Media"
+    ],
+
+    "whatWeDo": [
+      "Paid Social",
+      "Search",
+      "Video",
+      "Native",
+      "Retargeting",
+      "Planning",
+      "Strategy",
+      "Scale",
+      "Creative Testing",
+      "Daily Optimization"
+    ],
+
+    "deliver": [
+      {
+        "title": "Planning",
+        "sub": "Custom strategy focused on results."
+      },
+      {
+        "title": "Full-funnel",
+        "sub": "Complete acquisition and scaling structure."
+      },
+      {
+        "title": "Optimization",
+        "sub": "Continuous improvements to maximize performance."
+      },
+      {
+        "title": "Creative",
+        "sub": "Constant testing to discover winning creatives."
+      },
+      {
+        "title": "Reporting",
+        "sub": "Clear dashboards for fast decisions."
+      }
+    ],
+
+    "fit": [
+      {
+        "title": "SaaS",
+        "sub": "Companies seeking predictable growth."
+      },
+      {
+        "title": "Apps",
+        "sub": "Acquisition and retention at scale."
+      },
+      {
+        "title": "E-commerce",
+        "sub": "Profitable sales growth."
+      },
+      {
+        "title": "Services",
+        "sub": "Qualified demand generation."
+      },
+      {
+        "title": "Portals",
+        "sub": "Traffic and smart monetization."
+      }
+    ],
+
+    "why": [
+      {
+        "title": "Fast execution",
+        "sub": "Speed in implementation and optimization."
+      },
+      {
+        "title": "Robust tracking",
+        "sub": "Reliable and accurate measurement."
+      },
+      {
+        "title": "Real performance",
+        "sub": "Focused on CPA, ROAS and growth."
+      },
+      {
+        "title": "Executive reporting",
+        "sub": "Clear insights for decision-making."
+      }
+    ],
+    "services": [
+      {
+        "title": "Paid Social",
+        "sub": "Scalable campaigns across Meta, TikTok and LinkedIn focused on acquisition and performance."
+      },
+      {
+        "title": "Search",
+        "sub": "Google Ads strategies focused on intent, conversion and scale."
+      },
+      {
+        "title": "Video",
+        "sub": "Video campaign distribution focused on awareness and performance."
+      },
+      {
+        "title": "Retargeting",
+        "sub": "Reconnect with qualified users to improve conversion."
+      },
+      {
+        "title": "Continuous optimization",
+        "sub": "Daily monitoring, creative testing and ongoing performance improvements."
+      },
+      {
+        "title": "Scale",
+        "sub": "Structure designed for sustainable and predictable growth."
+      }
+    ],
+    "final_cta": {
+      "title": "Ready to scale media with predictability?",
+      "sub": "Strategy, media and performance connected for real growth.",
+      "button": "Talk to a specialist"
+    },
+    "cta": "Request media diagnosis"
+  }
+},
+
+"afiliacao": {
+
+  "hero": {
+    "tag": "AFFILIATE",
+    "title": "Affiliate<br><span>Marketing.</span>",
+    "sub": "Affiliate marketing built for performance, scale and controlled acquisition."
+  },
+
+  "sections": {
+
+    "titles": [
+      "What We Do",
+      "Platforms That Drive Results",
+      "What We Deliver",
+      "Best Fit",
+      "Why TAG for Affiliate"
+    ],
+
+    "whatWeDo": [
+      "Affiliate program setup",
+      "Publisher recruitment",
+      "Partner activation",
+      "Offer and payout structure",
+      "Fraud monitoring",
+      "Compliance and validation"
+    ],
+
+    "whatWeDoSub": [
+        "Complete affiliate operation setup with tracking, governance and operational structure.",
+        "Expansion of publisher and strategic partner network.",
+        "Affiliate acquisition and continuous activation strategies.",
+        "Smart payout modeling focused on sustainable growth.",
+        "Quality, compliance and brand protection monitoring.",
+        "Structure prepared for continuous and predictable scaling."
+      ],
+
+    "deliver": [
+      {
+        "title": "Full operation",
+        "sub": "Complete affiliate management from setup to scale."
+      },
+      {
+        "title": "Recruitment",
+        "sub": "Publisher onboarding and relationship management."
+      },
+      {
+        "title": "Optimization",
+        "sub": "Campaign control and continuous performance improvement."
+      },
+      {
+        "title": "Compliance",
+        "sub": "Validation routines and fraud prevention."
+      },
+      {
+        "title": "Scale",
+        "sub": "Performance-based growth with control."
+      }
+    ],
+    "why": [
+      {
+        "title": "Performance mindset",
+        "sub": "ROI and measurable results oriented."
+      },
+      {
+        "title": "Partner network",
+        "sub": "Strong affiliate and publisher ecosystem."
+      },
+      {
+        "title": "Operational control",
+        "sub": "Structured execution with total visibility."
+      },
+      {
+        "title": "Quality and compliance",
+        "sub": "Fraud prevention and brand protection."
+      }
+    ],
+    "affiliateCta": {
+      "tag": "Affiliate Growth Engine",
+
+      "title": "Scale your affiliate operation with control and performance.",
+
+      "sub": "We build affiliate programs designed for acquisition, monetization and scalable growth.",
+
+      "button": "Launch affiliate operation"
+    },
+    "cta": "Launch affiliate operation"
+        }
+    },
+  "programaticaAdvertiser": {
+    "hero": {
+      "tag": "PROGRAMMATIC",
+      "title": "Programmatic For<br><span>Advertisers.</span>",
+      "sub": "Programmatic media for advertisers who want scale beyond walled gardens.",
+      "sub2": "Expand reach through display, video, native, retargeting and premium inventory with more control and diversification."
+    },
+
+    "sections": {
+
+      "titles": [
+        "What We Do",
+        "Platforms That Drive Results",
+        "Channels / Inventory",
+        "What We Deliver",
+        "Why TAG for Programmatic"
+      ],
+
+      "whatWeDo": [
+        {
+          "title": "DSP media buying",
+          "sub": "Programmatic buying through DSPs with continuous optimization and performance focus."
+        },
+        {
+          "title": "Audience strategy",
+          "sub": "Smart segmentation based on behavior, interests and intent."
+        },
+        {
+          "title": "Premium inventory access",
+          "sub": "Access to premium publishers and brand-safe environments."
+        },
+        {
+          "title": "Retargeting strategy",
+          "sub": "Reconnect with qualified users to improve conversion and retention."
+        },
+        {
+          "title": "Cross-channel activation",
+          "sub": "Integrated execution across display, video, native and multiple channels."
+        }
+      ],
+
+      "channels": [
+        "Display",
+        "Video",
+        "Native",
+        "Retargeting"
+      ],
+
+      "deliver": [
+        "Media planning and audience segmentation",
+        "Inventory and bidding management",
+        "Campaign optimization",
+        "Performance analysis",
+        "Scalable media buying operations"
+      ],
+
+      "why": [
+        "Diversification beyond Big Tech",
+        "More control over inventory",
+        "Advanced segmentation",
+        "Scalable global reach"
+      ],
+
+      "ctaTag": "Programmatic Media Engine",
+
+      "ctaTitle": "Scale your programmatic media operation with control and performance.",
+
+      "ctaSub": "We structure programmatic campaigns focused on reach, segmentation, premium inventory and scalable acquisition.",
+
+      "cta": "Build your programmatic strategy",
+
+      "cta_sales": "Talk to Sales"
+    }
+  },
+"programaticaPublisher": {
+  "hero": {
+    "tag": "PROGRAMMATIC",
+    "title": "Programmatic for<br><span>Publishers.</span>",
+    "sub": "Programmatic monetization for publishers looking to increase revenue and inventory control.",
+    "sub2": "We help publishers, apps, and digital platforms structure monetization, optimize demand, and grow programmatic revenue.",
+    "cta": "Talk to Sales"
+  },
+
+  "sections": {
+
+    "whatWeDo": {
+      "title": "What We Do",
+
+      "cards": [
+        {
+          "title": "Header bidding setup",
+          "sub": "Advanced header bidding structure to maximize competition and revenue."
+        },
+        {
+          "title": "Ad server support",
+          "sub": "Technical and operational management for ad servers and configurations."
+        },
+        {
+          "title": "SSP and demand optimization",
+          "sub": "Strategic SSP connections and continuous demand optimization."
+        },
+        {
+          "title": "Yield strategy",
+          "sub": "Strategies to improve CPM, fill rate, and monetization."
+        },
+        {
+          "title": "Monetization consulting",
+          "sub": "Specialized consulting focused on programmatic revenue growth."
+        }
+      ]
+    },
+
+      "platforms": {
+    "title": "Platforms That Drive Results"
+      },
+
+    "deliver": {
+      "title": "What We Deliver",
+
+      "cards": [
+        {
+          "title": "Monetization audit",
+          "sub": "Complete inventory and opportunity assessment."
+        },
+        {
+          "title": "Revenue optimization",
+          "sub": "Continuous strategies to increase revenue."
+        },
+        {
+          "title": "Demand integrations",
+          "sub": "Integrations with premium demand partners."
+        },
+        {
+          "title": "Technical support",
+          "sub": "Specialized operational and technical support."
+        },
+        {
+          "title": "Reporting",
+          "sub": "Complete visibility into performance and monetization."
+        }
+      ]
+    },
+
+    "bestFit": {
+      "title": "Best Fit",
+
+      "cards": [
+        {
+          "title": "Content publishers",
+          "sub": "Content portals and websites with recurring audiences."
+        },
+        {
+          "title": "Apps",
+          "sub": "Applications with programmatic monetization potential."
+        },
+        {
+          "title": "Portals",
+          "sub": "Large audience and inventory scale."
+        },
+        {
+          "title": "Digital products",
+          "sub": "Digital products with scalable user bases."
+        }
+      ]
+    },
+
+    "why": {
+      "title": "Why TAG for Programmatic",
+
+      "cards": [
+        {
+          "title": "Revenue maximization",
+          "sub": "Strategies focused on increasing revenue."
+        },
+        {
+          "title": "Technical expertise",
+          "sub": "Experts in monetization and programmatic infrastructure."
+        },
+        {
+          "title": "Independent operation",
+          "sub": "Independent and transparent operations."
+        },
+        {
+          "title": "Transparency",
+          "sub": "Complete control over revenue and inventory."
+        }
+      ]
+    }
+  },
+
+"ctaTag": "Publisher Revenue Engine",
+
+"ctaTitle": "Scale your programmatic monetization with more revenue and control.",
+
+"ctaSub": "We structure programmatic operations for publishers, apps and digital platforms focused on sustainable revenue growth.",
+
+"cta": "Request a monetization assessment"
+  }
+}

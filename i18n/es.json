@@ -1,0 +1,639 @@
+{
+  "global": {
+    "nav": {
+      "home": "Home",
+      "home_nav_about": "Sobre", 
+      "services": "Servicios", 
+      "platforms": "Plataformas", 
+      "deliver": "Entregables", 
+      "contact": "Contacto"
+    },
+
+      "cta_sales": "Habla con ventas",
+      "cta_explore": "Explorar soluciones",
+
+      "footer": "2025 © TAG — Todos los derechos reservados",
+
+      "footer_company": {
+      "company": "Nombre Corporativo",
+      "company_name": "MEDIEN INTERNET LTDA",
+
+      "cnpj": "CNPJ",
+      "cnpj_number": "23.992.680/0001-72",
+
+      "address_title": "Dirección",
+
+      "address_line1": "R Sargento José da Silva, 119",
+      "address_line2": "Lote 63 Pal 16070 Qdr B",
+      "address_line3": "João – Río de Janeiro – RJ",
+      "address_line4": "CEP 22611-140",
+
+      "location_title": "Ubicación",
+      "location_cta": "Ver en el mapa",
+
+      "contact_title": "Contacto",
+
+      "email": "financeiro@medien.com.br",
+      "phone": "(21) 2244-8850",
+
+      "social_title": "Redes sociales",
+
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
+    }
+  },
+
+  "home": {
+
+    "hero": {
+      "eyebrow": "Hub de Growth Performance", 
+
+      "title": "Medios.<br>Datos.<br><span>Crecimiento.</span>", 
+
+      "sub": "Combinamos medios, inteligencia y performance para acelerar empresas de tecnología con crecimiento predecible y escalable."
+    },
+
+    "about": {
+      "eyebrow": "Quiénes Somos",
+
+      "title": "Operadores de Growth.<br>No Agencia Tradicional.",
+
+      "sub": "Somos TAG hub de medios y performance especializado en escalar empresas de tecnología a través de datos, adquisición e inteligencia de conversión.",
+
+      "cards": [
+        {
+        "title": "Crecimiento real",
+
+        "sub": "Céntrate en el impacto real en el negocio."
+        },
+        {
+        "title": "Equipo Técnico",
+
+        "sub": "Especialistas en adquisiciones, análisis y escala."
+        },
+        {
+        "title": "Método Próprio",
+
+        "sub": "Marco creado para repetir lo que funciona."
+        },
+        {
+        "title": "Sociedad",
+
+        "sub": "Actuamos como una extensión de vuestro equipo."
+        }
+      ]
+    },
+
+    "solutions": {
+        "eyebrow": "Soluciones",
+
+        "title": "Todo Lo Que Necesitas Para Escalar",
+
+      "cards": [
+        {
+          "title": "Medios Pagados",
+
+          "sub": "Google, Meta, LinkedIn, TikTok y adquisición omnicanal.",
+        
+          "link": "Haz clic aquí →"
+        },
+
+        {
+          "title": "Afiliación",
+
+          "sub": "Alianzas estratégicas, canales de venta y expansión a través de afiliados.",
+
+          "link": "Haga clic aquí →"
+        },
+
+        {
+          "title": "Programática para Anunciantes",
+
+          "sub": "Medios programáticos para anunciantes con enfoque en rendimiento y escala.",
+
+          "link": "Haga clic aquí →"
+        },
+
+        {
+          "title": "Programática para Publisher",
+
+          "sub": "Monetización inteligente para publishers con tecnología y datos.",
+
+          "link": "Haga clic aquí →"
+        }
+      ]
+    },
+
+    "brands": {
+      "title": "Plataformas que Impulsan Resultados"
+    },
+
+    "cases": {
+        "eyebrow": "CASOS DE ÉXITO", 
+
+        "title": "Rendimiento Con Prueba",
+
+      "cards": [
+
+        {
+        "title": "Caso SaaS",
+
+        "sub": "Software como Servicio",
+
+        "items": [
+        "+180% en leads calificados",
+        "42% de reducción en el CPL",
+        "+27% de reducción en el ciclo de ventas"
+        ]
+        },
+
+        {
+        "title": "Caso E-commerce Tech",
+
+        "sub": "Tienda Digital",
+
+        "items": [
+        "+3.5x aumento en el ROAS",
+        "+240% crecimiento de ingresos",
+        "+120% aumento en la conversión"
+          ]
+        },
+
+        {
+        "title": "Case App Tech",
+
+        "sub": "Aplicación Móvil",
+
+        "items": [
+        "+150% usuarios activos",
+        "35% reducción CAC promedio",
+        "+220% retención a 30 días"
+          ]
+        }
+      ]
+    },
+
+    "contact": {
+
+        "eyebrow": "CONTACTO",
+
+        "title": "Hable con nuestros especialistas",
+
+        "sub": "¿Listo para impulsar sus resultados? Nuestro equipo está listo para ayudarle a crecer con estrategia, medios y rendimiento.",
+
+      "cards": [
+
+        {
+        "title": "WhatsApp",
+
+        "sub": "Vea nuestra plataforma en acción",
+
+        "items": [
+        "Diagnóstico inicial gratuito",
+        "Presentación estratégica",
+        "Plan de crecimiento personalizado"
+          ],
+
+          "cta": "Conversar"
+        },
+
+        {
+          "title": "Soporte",
+
+          "sub": "Resuelve tus dudas con nuestro equipo",
+
+          "items": [
+          "Atención comercial",
+          "Aclaración técnica",
+          "Respuesta rápida por correo electrónico"
+          ],
+
+          "cta": "Enviar correo electrónico"
+        }
+      ]
+    }
+  },
+
+  "midia": {
+
+    "hero": {
+      "tag": "MEDIOS PAGOS",
+      "title": "Medios<br><span>Pagos.</span>",
+      "sub": "Planeamos, lanzamos y optimizamos campañas en los principales canales pagos con enfoque total en rendimiento, escala y adquisición calificada."
+    },
+
+    "sections": {
+
+      "titles": [
+        "Lo que hacemos",
+        "Plataformas que impulsan resultados",
+        "Lo que entregamos",
+        "Mejor perfil",
+        "Por qué TAG para medios de pago"
+        ],
+
+      "whatWeDo": [
+        "Social Pagado",
+        "Investigación",
+        "Vídeo",
+        "Nativo",
+        "Redireccionamiento",
+        "Planificación",
+        "Estrategia",
+        "Escala",
+        "Pruebas Creativas",
+        "Optimización diaria"
+      ],
+
+      "deliver": [
+        {
+          "title": "Planificación",
+          "sub": "Estrategia personalizada con enfoque en resultados."
+        },
+        {
+          "title": "Full-funnel",
+          "sub": "Estructura completa para adquisición y escala."
+        },
+        {
+          "title": "Optimización",
+          "sub": "Ajustes continuos para elevar el rendimiento."
+        },
+        {
+          "title": "Creativos",
+          "sub": "Pruebas constantes para descubrir ganadores."
+        },
+        {
+          "title": "Informes",
+          "sub": "Paneles claros para decisiones rápidas."
+        }
+      ],
+
+      "fit": [
+        {
+          "title": "SaaS", 
+          "sub": "Empresas que buscan crecimiento predecible."
+          }, 
+        {
+          "title": "Apps", 
+          "sub": "Adquisición y retención a gran escala."
+          }, 
+        {
+          "title": "E-commerce", 
+          "sub": "Ventas con rentabilidad saludable."
+          }, 
+        {
+          "title": "Servicios", 
+          "sub": "Generación de demanda calificada."
+          }, 
+        {
+          "title": "Portales", 
+          "sub": "Tráfico y monetización inteligente."
+        }
+      ],
+
+      "why": [
+        {
+          "title": "Ejecución rápida",
+          "sub": "Agilidad total en la implementación y ajustes."
+        },
+        {
+          "title": "Seguimiento robusto",
+          "sub": "Medición confiable y precisa."
+        },
+        {
+          "title": "Rendimiento real",
+          "sub": "Enfoque en CPA, ROAS y crecimiento."
+        },
+        {
+          "title": "Informes ejecutivos",
+          "sub": "Información clara para la toma de decisiones."
+        }
+      ],
+
+      "services": [
+      {
+        "title": "Social Pagado",
+        "sub": "Campañas escalables en Meta, TikTok y LinkedIn con enfoque en adquisición y rendimiento."
+      },
+      {
+        "title": "Search",
+        "sub": "Estrategias de Google Ads orientadas a la intención, conversión y escala."
+      },
+      {
+        "title": "Video",
+        "sub": "Distribución de campañas en video con enfoque en awareness y performance."
+      },
+      {
+        "title": "Retargeting",     
+        "sub": "Reconexión inteligente con usuarios calificados para aumentar la conversión."
+      },
+      {
+        "title": "Optimización continua",
+        "sub": "Monitoreo diario, pruebas creativas y mejora continua del rendimiento."
+      },
+      {
+        "title": "Escala",
+        "sub": "Estructura preparada para un crecimiento sostenible y predecible."
+      }
+    ],
+
+  "final_cta": {
+      "title": "¿Listo para escalar medios con previsibilidad?",
+      "sub": "Estrategia, medios y rendimiento conectados para un crecimiento real.",
+      "button": "Hablar con un especialista"
+    },
+
+      "cta": "Solicitar diagnóstico de medios"
+    }
+  },
+
+  "afiliacao": {
+
+    "hero": {
+      "tag": "AFILIADOS",
+      "title": "Marketing de<br><span>Afiliados.</span>",
+      "sub": "Marketing de afiliados construido para rendimiento, escala y adquisición controlada."
+    },
+
+    "sections": {
+
+      "titles": [
+        "Qué Hacemos",
+        "Plataformas que Impulsan Resultados",
+        "Qué Entregamos",
+        "Mejor Perfil",
+        "Por qué TAG para Afiliados"
+      ],
+
+      "whatWeDo": [
+        "Configuración del programa de afiliados",
+        "Reclutamiento de publishers",
+        "Activación de socios",
+        "Estructura de ofertas y comisiones",
+        "Monitoreo de fraude",
+        "Cumplimiento y validación"
+      ],
+
+      "whatWeDoSub": [
+        "Estructuración completa de la operación afiliada con seguimiento, normas y gobernanza.",
+        "Expansión de la red de editores y socios estratégicos.",
+        "Estrategias para adquirir y activar continuamente afiliados.",
+        "Modelado inteligente de pagos centrado en el crecimiento sostenible.",
+        "Monitorización de calidad, cumplimiento y protección de marca.",
+        "Estructura preparada para un crecimiento continuo y predecible."
+      ],
+
+      "deliver": [
+        {
+          "title": "Operación completa",
+          "sub": "Gestión completa del programa de afiliados desde el inicio hasta la escala."
+        },
+        {
+          "title": "Reclutamiento",
+          "sub": "Incorporación de publishers y gestión de relaciones."
+        },
+        {
+          "title": "Optimización",
+          "sub": "Control de campañas y mejora continua del rendimiento."
+        },
+        {
+          "title": "Cumplimiento",
+          "sub": "Rutinas de validación y prevención de fraudes."
+        },
+        {
+          "title": "Escala",
+          "sub": "Crecimiento basado en rendimiento con control."
+        }
+      ],
+      "why": [
+        {
+          "title": "Enfoque en performance",
+          "sub": "Orientado a ROI y resultados medibles."
+        },
+        {
+          "title": "Red de socios",
+          "sub": "Ecosistema sólido de afiliados y publishers."
+        },
+        {
+          "title": "Control operacional",
+          "sub": "Ejecución estructurada con total visibilidad."
+        },
+        {
+          "title": "Calidad y cumplimiento",
+          "sub": "Prevención de fraudes y protección de la marca."
+        }
+      ],
+
+      "affiliateCta": {
+        "tag": "Motor de Crecimiento de Afiliados", 
+
+        "title": "Escale su operación de afiliados con control y rendimiento.", 
+
+        "sub": "Estructuramos programas preparados para adquisición, monetización y escala.", 
+
+        "button": "Lanzar operación de afiliados"
+      },
+
+        "cta": "Lanzar operación de afiliados"
+    }
+  },
+  "programaticaAdvertiser": {
+    "hero": {
+      "tag": "PROGRAMÁTICA", 
+      "title": "Programática para<br><span>Anunciantes.</span>",
+      "sub": "Medios programáticos para anunciantes que desean escala más allá de los walled gardens.",
+      "sub2": "Expande el alcance a través de display, video, native, retargeting e inventario premium con más control y diversificación."
+    },
+
+    "sections": {
+
+      "titles": [
+        "Qué Hacemos",
+        "Plataformas que Impulsan Resultados",
+        "Canales / Inventario",
+        "Qué Entregamos",
+        "Por qué TAG para Programática"
+      ],
+
+      "whatWeDo": [
+        {
+          "title": "Compra a través de DSP",
+          "sub": "Compra programática en DSPs con optimización continua y enfoque en rendimiento."
+        },
+        {
+          "title": "Estrategia de audiencia",
+          "sub": "Segmentación inteligente basada en comportamiento, interés e intención."
+        },
+        {
+          "title": "Acceso a inventario premium",
+          "sub": "Acceso a publishers premium y entornos seguros para marcas."
+        },
+        {
+          "title": "Estrategia de retargeting",
+          "sub": "Reconexión con usuarios calificados para aumentar conversión y recurrencia."
+        },
+        {
+          "title": "Activación cross-channel",
+          "sub": "Ejecución integrada entre display, video, native y múltiples canales."
+        }
+      ],
+
+      "channels": [
+        "Display",
+        "Vídeo",
+        "Nativo",
+        "Redireccionamiento"
+      ],
+
+      "deliver": [
+        "Planificación de medios y segmentación de audiencia",
+        "Gestión de inventario y pujas",
+        "Optimización de campañas",
+        "Análisis de rendimiento",
+        "Operación escalable de compra de medios"
+      ],
+
+      "why": [
+        "Diversificación más allá de las Big Techs",
+        "Más control sobre inventario",
+        "Segmentación avanzada",
+        "Escala global de alcance"
+      ],
+
+      "ctaTag": "Motor de Medios Programáticos",
+
+      "ctaTitle": "Escale su operación de medios programáticos con control y rendimiento.",
+
+      "ctaSub": "Estructuramos campañas programáticas enfocadas en alcance, segmentación, inventario premium y adquisición escalable.",
+
+      "cta": "Construir estrategia programática",
+
+      "cta_sales": "Hablar con ventas"
+    }
+  },
+"programaticaPublisher": {
+  "hero": {
+    "tag": "PROGRAMÁTICA",
+    "title": "Programática para <br> <span> Publisher.</span>",
+    "sub": "Monetización programática para publishers que desean aumentar ingresos y control del inventario.",
+    "sub2": "Ayudamos a publishers, apps y plataformas digitales a estructurar la monetización, optimizar la demanda y aumentar los ingresos programáticos.",
+    "cta": "Hablar con ventas"
+  },
+
+  "sections": {
+
+    "whatWeDo": {
+      "title": "Lo Que Hacemos",
+
+      "cards": [
+        {
+          "title": "Configuración de Header Bidding",
+          "sub": "Estructuración avanzada de header bidding para maximizar la competencia y los ingresos."
+        },
+        {
+          "title": "Soporte a Ad Server",
+          "sub": "Gestión técnica y operativa de ad servers y configuraciones."
+        },
+        {
+          "title": "Optimización de SSP y Demanda",
+          "sub": "Conexión estratégica con SSPs y optimización continua de la demanda."
+        },
+        {
+          "title": "Estrategia de Yield",
+          "sub": "Estrategias para aumentar CPM, fill rate y monetización."
+        },
+        {
+          "title": "Consultoría de Monetización",
+          "sub": "Consultoría especializada en crecimiento de ingresos programáticos."
+        }
+      ]
+    },
+
+    "platforms": {
+      "title": "Plataformas que Impulsan Resultados"
+     },
+
+    "deliver": {
+      "title": "Lo Que Entregamos",
+
+      "cards": [
+      {
+        "title": "Auditoría de monetización",
+        "sub": "Diagnóstico completo de inventario y oportunidades."
+      },
+      {
+        "title": "Optimización de ingresos",
+        "sub": "Estrategias continuas para aumento de ingresos."
+      },
+      {
+        "title": "Integraciones de demanda",
+        "sub": "Integraciones con socios de demanda premium."
+      },
+      {
+        "title": "Soporte técnico",
+        "sub": "Soporte operativo y técnico especializado."
+      },
+      {
+        "title": "Informes",
+        "sub": "Visibilidad completa del rendimiento y la monetización."
+      }
+      ]
+    },
+
+    "bestFit": {
+  "title": "Mejor Perfil",
+
+  "cards": [
+      {
+        "title": "Editores de contenido",
+        "sub": "Portales y sitios de contenido con audiencia recurrente."
+      },
+      {
+        "title": "Aplicaciones",
+        "sub": "Aplicaciones con potencial de monetización programática."
+      },
+      {
+        "title": "Portales",
+        "sub": "Grandes volúmenes de audiencia e inventario."
+      },
+      {
+        "title": "Productos digitales",
+        "sub": "Productos digitales con escala de usuarios."
+      }
+      ]
+    },
+
+    "why": {
+      "title": "Por qué TAG para Programática",
+
+      "cards": [
+      {
+        "title": "Maximización de ingresos",
+        "sub": "Estrategias enfocadas en el aumento de ingresos."
+      },
+      {
+        "title": "Especialización técnica",
+        "sub": "Especialistas en monetización e infraestructura programática."
+      },
+      {
+        "title": "Operación independiente",
+        "sub": "Operación independiente y transparente."
+      },
+      {
+        "title": "Transparencia",
+        "sub": "Control total sobre ingresos e inventario."
+      }
+      ]
+    },
+
+    "ctaTag": "Motor de Ingresos para Editores",
+
+    "ctaTitle": "Escale su monetización programática con más ingresos y control.",
+
+    "ctaSub": "Estructuramos operaciones programáticas para editores, apps y plataformas digitales enfocadas en el crecimiento sostenible de los ingresos.",
+
+    "cta": "Solicitar diagnóstico de monetización"
+    }
+  }
+}
